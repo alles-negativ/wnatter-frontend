@@ -1,0 +1,136 @@
+@use "assets/css/main/colors" as *;
+@use "assets/css/main/breakpoints" as *;
+@use "assets/css/main/main" as *;
+
+.cookie-consent {
+    position: fixed;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 45px;
+    background-color: $black;
+    top: 5em;
+    left: 0;
+    right: 0;
+    margin-left: 1em;
+    margin-right: 1em;
+    border-radius: 20px;
+    padding: 0.25em;
+    animation: pulse 1s ease-in infinite;
+
+    @include tablet {
+        flex-flow: row wrap;
+        right: $contentpaddingLarge;
+        left: auto;
+        top: 5em;
+        width: 250px;
+        height: 75px;
+        padding: 0.5em;
+        margin-right: 0em;
+    }
+
+    @include desktop {
+        flex-flow: row wrap;
+        right: $contentpaddingLarge;
+        left: auto;
+        top: 5em;
+        width: 300px;
+        height: 75px;
+        padding: 0.5em;
+        margin-right: 0em;
+    }
+
+    @include desktopXL {
+        flex-flow: row wrap;
+        right: $contentpaddingLarge;
+        left: auto;
+        top: 5em;
+        width: 300px;
+        height: 75px;
+        padding: 0.5em;
+        margin-right: 0em;
+    }
+
+    p {
+        color: white;
+        text-align: center;
+        margin-right: 1em;
+        font-size: 12px;
+
+        @include tablet {
+            width: 100%;
+            margin-right: 0em;
+            font-size: 14px;
+        }
+
+        @include desktop {
+            width: 100%;
+            margin-right: 0em;
+            font-size: 14px;
+        }
+
+        @include desktopXL {
+            width: 100%;
+            margin-right: 0em;
+            font-size: 14px;
+        }
+    }
+
+    .accept__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        background-color: $black;
+        border: thin solid $white;
+        color: $white;
+        border-radius: 200px;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        cursor: pointer;
+
+        @include tablet {
+            margin-left: 1em;
+        }
+
+        @include desktop {
+            margin-left: 1em;
+        }
+
+        @include desktopXL {
+            margin-left: 1em;
+        }
+
+        &:hover {
+            background-color: $white;
+
+            .accept__text {
+                color: $black;
+            }
+        }
+    }
+
+    .accept__text {
+        margin-right: 0em;
+    }
+
+    .btn-link p {
+        color: $white;
+        text-decoration: underline;
+
+        &:hover {
+            font-style: italic;
+        }
+    }
+}
+
+@keyframes pulse {
+        0%, 100% {
+            transform: translate(0, 5px)
+        }
+        50% {
+            transform: translate(0, 0)
+        }
+    }

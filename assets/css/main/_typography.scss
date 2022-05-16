@@ -1,0 +1,175 @@
+/*
+Global definitions of typography
+*/
+
+@use "breakpoints" as *;
+@use "colors" as *;
+
+h1 {
+    font-family: SpaceGrotesk, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 35px;
+
+  @include tablet {
+        font-size: 40px;
+  }
+
+  @include desktop {
+        font-size: 55px;
+  }
+
+  @include desktopXL {
+        font-size: 55px;
+  }
+}
+
+h2 {
+    font-family: SpaceGrotesk, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 50px;
+}
+
+h3 {
+    font-family: SpaceGrotesk, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+
+    @include tablet {
+        font-size: 35px;
+    }
+
+    @include desktop {
+            font-size: 40px;
+    }
+
+    @include desktopXL {
+            font-size: 40px;
+    }
+}
+
+p, button {
+    font-family: SpaceGrotesk, sans-serif;
+    font-style: normal;
+    line-height: 26px;
+}
+
+.text {
+    font-family: SpaceGrotesk, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 26px;
+    text-decoration: none;
+
+    &__big {
+        font-weight: 500;
+
+        @include tablet {
+            font-size: 20px;
+            line-height: 26px;
+        }
+
+        @include desktop {
+            font-size: 24px;
+            line-height: 31px;
+        }
+
+        @include desktopXL {
+            font-size: 30px;
+            line-height: 38px;
+        }   
+
+        &--black {
+            color: $black;
+        }
+
+        &--white {
+            color: $white;
+        }
+
+        &--narrow {
+            line-height: 30px;
+        }
+    }
+
+    &__big > p {
+        font-weight: 500;
+
+        @include tablet {
+            font-size: 20px;
+            line-height: 26px;
+        }
+
+        @include desktop {
+            font-size: 24px;
+            line-height: 31px;
+        }
+
+        @include desktopXL {
+            font-size: 30px;
+            line-height: 38px;
+        }
+    }     
+
+    &__medium {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    &__small {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    &__footer {
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 600;
+    }
+
+    &__menu {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: auto;
+        text-transform: capitalize;
+    }
+
+    a:hover {
+        color: blue;
+    }
+}
+
+span {
+    font-family: SpaceGrotesk, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 35px;
+    line-height: 45px;
+
+    @include tablet {
+        font-size: 45px;
+        line-height: 65px;
+    }
+
+    @include desktop {
+        font-size: 55px;
+        line-height: 70px;
+    }
+    
+    @include desktopXL {
+        font-size: 55px;
+        line-height: 70px;
+    } 
+}
+
+a {
+    color: $black;
+    text-decoration: underline;
+
+    &:hover {
+        color: blue;
+    }
+}

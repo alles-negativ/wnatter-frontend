@@ -1,0 +1,14 @@
+/*
+This file is the singular entry point for global scss
+it is declared in the config file under the css-config
+Using @use to add all the global styles
+*/
+
+@use 'reset/reset';
+
+@use 'main/main';
+@use 'main/typography';
+@use 'main/fonts';
+@use 'main/_grids';
+@use 'main/zindex';
+@use 'main/colors';

@@ -1,0 +1,34 @@
+/*
+Basic setup for a few different grids
+Should be changed within the component if needed
+*/
+
+@use "breakpoints" as *;
+@use "main" as *;
+
+.grid {
+    display: grid;
+    grid-gap: 12px;
+    grid-template-columns: 1fr;
+    margin-bottom: $margin;
+
+    @include tablet {
+        grid-gap: 20px;
+        grid-template-columns: 1fr;
+        margin-bottom: $marginLarge;
+    }
+
+    @include desktop {
+        grid-gap: 30px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: row dense;
+        margin-bottom: $marginLarge;
+    }
+
+    @include desktopXL {
+        grid-gap: 30px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: row dense;
+        margin-bottom: $marginLarge;
+    }
+}

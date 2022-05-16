@@ -1,0 +1,72 @@
+@use "assets/css/main/colors" as *;
+@use "assets/css/main/breakpoints" as *;
+@use "assets/css/main/main" as *;
+
+.container {
+    display: flex;
+
+    &__columns {
+    width: 100%;
+    margin-bottom: 1em;
+
+    @include tablet {
+        width: 100%;
+        columns: 1;
+        margin-right: 2em;
+    }
+
+    @include desktop {
+        width: 50%;
+        columns: 1;
+        margin-right: 3em;
+    }
+
+    @include desktopXL {
+        width: 33%;
+        columns: 1;
+        margin-right: 3em;
+    }
+
+        .content {
+            display: flex;
+            flex-flow: column nowrap;
+            width: 100%;
+            page-break-inside: avoid;
+            margin-bottom: 5em;
+            border-bottom: thin solid $black;
+        }
+    }    
+}
+
+h3 {
+    margin-top: 1em;
+}
+
+p {
+    margin-bottom: 1.5em;
+}
+
+.text {
+    margin-bottom: 1.5em;
+}
+
+img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+
+    @include tablet {
+        width: 100%;
+        height: 500px;
+    }
+
+    @include desktop {
+        width: 100%;
+        height: 500px;
+    }
+
+    @include desktopXL {
+        width: 100%;
+        height: 500px;
+    }
+}

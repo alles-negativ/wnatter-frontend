@@ -1,0 +1,44 @@
+/*
+Global definitions for overreaching elements
+*/
+
+@use "breakpoints" as *;
+@use "colors" as *;
+
+$contentpadding: 0.75em;
+$contentpaddingLarge: 3em;
+
+$margin: 5em;
+$marginLarge: 7.5em;
+$marginXLarge: 15em;
+$marginXXLarge: 20em;
+
+$marginHeader: 5em;
+$marginHeaderMedium: 10em;
+$marginHeaderLarge: 20em;
+$marginHeaderXLarge: 30em;
+
+body {
+    background-color: $white;
+}
+
+.wrapper {
+   margin-bottom: 10em;
+   padding-left: $contentpadding;
+   padding-right: $contentpadding;
+
+    @include tablet {
+        padding-left: $contentpaddingLarge;
+        padding-right: $contentpaddingLarge;
+    }
+
+    @include desktop {
+        padding-left: $contentpaddingLarge;
+        padding-right: $contentpaddingLarge;
+    }
+
+    @include desktopXL {
+        padding-left: $contentpaddingLarge;
+        padding-right: $contentpaddingLarge;
+    }
+}

@@ -1,0 +1,157 @@
+//Transition/content styling is applied in the collection components
+//Reason: Individual needs for different content types
+
+@use "assets/css/main/colors" as *;
+@use "assets/css/main/breakpoints" as *;
+@use "assets/css/main/main" as *;
+
+.accordion {
+    width: 100%;
+    border-top: thin solid $black;
+    border-bottom: thin solid $black;
+    margin-top: -1px;
+    padding-top: $contentpadding;
+    padding-bottom: $contentpadding;
+
+        &__title {
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            height: auto;
+            padding-top: $contentpadding;
+            padding-bottom: $contentpadding;
+            cursor: pointer;
+
+            .right {
+                height: 25px;
+                width: 43px;
+            }
+
+            .plus {
+                font-size: 60px;
+                font-weight: 300;
+                transition-duration: 200ms;
+                transform-origin: 45%;
+        }
+    }
+
+.rotate {
+    transform: rotate(45deg);
+    transition-duration: 300ms;
+    transform-origin: 45%;
+}
+
+    &__body {
+        overflow: hidden;
+        border-top: 0;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+    }
+}
+
+// circle animations 
+
+#container {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    top: -39px;
+    right: 6px;
+    // border: solid red 1px;
+  }
+  
+  #halfclip {
+      width: 50%;
+      height: 100%;
+      right: 0px;
+      position: absolute;
+      overflow: hidden;
+      transform-origin: left center;
+  }
+  
+  #container .animated1 {
+
+    @include desktop {
+        animation: cliprotate 2s 1;
+        transform: rotate(180deg);
+    }
+    
+    @include desktopXL {
+        animation: cliprotate 2s 1;
+        transform: rotate(180deg);
+    }
+
+  } 
+  
+  @keyframes cliprotate {
+    0% {transform: rotate(0deg);}
+    50% {transform: rotate(0deg);}
+    50.01% {transform: rotate(180deg);}
+    100% {transform: rotate(180deg);}
+  }
+  
+  .halfcircle {
+    box-sizing: border-box;
+    height: 100%;
+    right: 0px;
+    position: absolute;
+    border: solid 3px transparent;
+    border-top-color: $black;
+    border-left-color: $black;
+    border-radius: 50%;
+  }
+  
+  #clipped {
+      width: 200%;
+      transform: rotate(-45deg);
+  }
+
+  #container .animated2 {
+
+    @include desktop {
+        transform: rotate(135deg);
+        animation: rotate 1s linear 2;
+    }
+    
+    @include desktopXL {
+        transform: rotate(135deg);
+        animation: rotate 1s linear 2;
+    }   
+  }
+  
+  
+  @keyframes rotate {
+    0% {transform: rotate(-45deg);}
+    100% {transform: rotate(135deg);}
+  }
+  
+  
+  #fixed {
+    width: 100%;
+      transform: rotate(135deg);  
+      opacity: 0;
+  }
+  
+  #container .animated3 {
+
+    @include desktop {
+        opacity: 1;
+        animation: showfixed 2s 1;
+    }
+    
+    @include desktopXL {
+        opacity: 1;
+        animation: showfixed 2s 1;
+    } 
+  }
+  
+  
+  
+  @keyframes showfixed {
+    0% {opacity: 0;}
+    49.99% {opacity: 0;}
+    50% {opacity: 1;}
+   100% {opacity: 1;}
+  }
