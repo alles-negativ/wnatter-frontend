@@ -7,7 +7,6 @@
       </nuxt-link>
       <div class="header__links--utility">
         <p class="text__menu">{{ header.title }}</p>
-        <LanguageInput />
       </div>  
     </div>
     <div class="header__content">

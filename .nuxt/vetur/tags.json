@@ -1,0 +1,20 @@
+{
+  "Accordion": {
+    "description": "Auto imported from components/Accordion/Accordion.vue"
+  },
+  "CookieBox": {
+    "description": "Auto imported from components/CookieBox/CookieBox.vue"
+  },
+  "Footer": {
+    "description": "Auto imported from components/Footer/Footer.vue"
+  },
+  "Articles": {
+    "description": "Auto imported from components/Articles/Articles.vue"
+  },
+  "Navigation": {
+    "description": "Auto imported from components/Navigation/Navigation.vue"
+  },
+  "Header": {
+    "description": "Auto imported from components/Header/Header.vue"
+  }
+}

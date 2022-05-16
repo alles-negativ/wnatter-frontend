@@ -17,6 +17,7 @@
     "core-js": "^3.15.1",
     "dart-sass": "^1.25.0",
     "nuxt": "^2.15.7",
+    "sharp": "^0.30.4",
     "vue-cookieconsent-component": "^1.2.0",
     "vue-if-bot": "^1.2.0"
   },
