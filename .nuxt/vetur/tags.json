@@ -2,19 +2,28 @@
   "Accordion": {
     "description": "Auto imported from components/Accordion/Accordion.vue"
   },
+  "Firma": {
+    "description": "Auto imported from components/Firma/Firma.vue"
+  },
   "CookieBox": {
     "description": "Auto imported from components/CookieBox/CookieBox.vue"
-  },
-  "Footer": {
-    "description": "Auto imported from components/Footer/Footer.vue"
   },
   "Articles": {
     "description": "Auto imported from components/Articles/Articles.vue"
   },
-  "Navigation": {
-    "description": "Auto imported from components/Navigation/Navigation.vue"
+  "Footer": {
+    "description": "Auto imported from components/Footer/Footer.vue"
   },
   "Header": {
     "description": "Auto imported from components/Header/Header.vue"
+  },
+  "Map": {
+    "description": "Auto imported from components/Map/Map.vue"
+  },
+  "Navigation": {
+    "description": "Auto imported from components/Navigation/Navigation.vue"
+  },
+  "Person": {
+    "description": "Auto imported from components/Person/Person.vue"
   }
 }

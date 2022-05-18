@@ -1,40 +1,5 @@
 [
   {
-    "name": "contact",
-    "path": "/contact",
-    "component": "/Users/carlonatter/_code/wnatter/wnatter-frontend/pages/contact.vue",
-    "chunkName": "pages/contact",
-    "_name": "_02eede4e"
-  },
-  {
-    "name": "index___de",
-    "path": "/de",
-    "component": "/Users/carlonatter/_code/wnatter/wnatter-frontend/pages/index.vue",
-    "chunkName": "pages/index",
-    "_name": "_5315fe6a"
-  },
-  {
-    "name": "index___en",
-    "path": "/en",
-    "component": "/Users/carlonatter/_code/wnatter/wnatter-frontend/pages/index.vue",
-    "chunkName": "pages/index",
-    "_name": "_5315fe6a"
-  },
-  {
-    "name": "contact___de",
-    "path": "/de/contact",
-    "component": "/Users/carlonatter/_code/wnatter/wnatter-frontend/pages/contact.vue",
-    "chunkName": "pages/contact",
-    "_name": "_02eede4e"
-  },
-  {
-    "name": "contact___en",
-    "path": "/en/contact",
-    "component": "/Users/carlonatter/_code/wnatter/wnatter-frontend/pages/contact.vue",
-    "chunkName": "pages/contact",
-    "_name": "_02eede4e"
-  },
-  {
     "name": "index",
     "path": "/",
     "component": "/Users/carlonatter/_code/wnatter/wnatter-frontend/pages/index.vue",

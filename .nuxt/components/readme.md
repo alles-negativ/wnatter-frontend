@@ -7,8 +7,11 @@ You can directly use them in pages and other components without the need to impo
 **Tip:** If a component is conditionally rendered with `v-if` and is big, it is better to use `Lazy` or `lazy-` prefix to lazy load.
 
 - `<Accordion>` | `<accordion>` (components/Accordion/Accordion.vue)
+- `<Firma>` | `<firma>` (components/Firma/Firma.vue)
 - `<CookieBox>` | `<cookie-box>` (components/CookieBox/CookieBox.vue)
-- `<Footer>` | `<footer>` (components/Footer/Footer.vue)
 - `<Articles>` | `<articles>` (components/Articles/Articles.vue)
-- `<Navigation>` | `<navigation>` (components/Navigation/Navigation.vue)
+- `<Footer>` | `<footer>` (components/Footer/Footer.vue)
 - `<Header>` | `<header>` (components/Header/Header.vue)
+- `<Map>` | `<map>` (components/Map/Map.vue)
+- `<Navigation>` | `<navigation>` (components/Navigation/Navigation.vue)
+- `<Person>` | `<person>` (components/Person/Person.vue)

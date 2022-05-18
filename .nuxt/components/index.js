@@ -1,9 +1,12 @@
 export { default as Accordion } from '../../components/Accordion/Accordion.vue'
+export { default as Firma } from '../../components/Firma/Firma.vue'
 export { default as CookieBox } from '../../components/CookieBox/CookieBox.vue'
-export { default as Footer } from '../../components/Footer/Footer.vue'
 export { default as Articles } from '../../components/Articles/Articles.vue'
-export { default as Navigation } from '../../components/Navigation/Navigation.vue'
+export { default as Footer } from '../../components/Footer/Footer.vue'
 export { default as Header } from '../../components/Header/Header.vue'
+export { default as Map } from '../../components/Map/Map.vue'
+export { default as Navigation } from '../../components/Navigation/Navigation.vue'
+export { default as Person } from '../../components/Person/Person.vue'
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {

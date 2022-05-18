@@ -3,19 +3,6 @@
 @use "assets/css/main/main" as *;
 
 footer {
-  margin-top: $marginLarge;
-
-  @include tablet {
-        margin-top: $marginXLarge;
-    }
-
-    @include desktop {
-        margin-top: $marginXXLarge;
-    }
-
-    @include desktopXL {
-        margin-top: $marginXXLarge;
-    }
 }
 
 a { 
@@ -28,27 +15,23 @@ a {
   flex-direction: column;
   height: auto;
   color: $white;
-  background-color: $black;
+  background-color: $blue;
   justify-content: center;
-  border-radius: 20px 20px 0px 0px;
   bottom: 0;
 
     @include tablet {
         flex-wrap: wrap;
         padding-top: $contentpaddingLarge;
-        border-radius: 40px 40px 0px 0px;
     }
 
     @include desktop {
         flex-flow: column wrap;
         padding-top: $contentpaddingLarge;
-        border-radius: 40px 40px 0px 0px;
     }
 
     @include desktopXL {
         flex-flow: column wrap;
         padding-top: $contentpaddingLarge;
-        border-radius: 40px 40px 0px 0px;
     }
 
   &__top {

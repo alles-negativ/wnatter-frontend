@@ -18,27 +18,29 @@ $marginHeaderMedium: 10em;
 $marginHeaderLarge: 20em;
 $marginHeaderXLarge: 30em;
 
+$border: thin solid black;
+
 body {
     background-color: $white;
 }
 
-.wrapper {
-   margin-bottom: 10em;
-   padding-left: $contentpadding;
-   padding-right: $contentpadding;
+// .wrapper {
+//    margin-bottom: 10em;
+//    padding-left: $contentpadding;
+//    padding-right: $contentpadding;
 
-    @include tablet {
-        padding-left: $contentpaddingLarge;
-        padding-right: $contentpaddingLarge;
-    }
+//     @include tablet {
+//         padding-left: $contentpaddingLarge;
+//         padding-right: $contentpaddingLarge;
+//     }
 
-    @include desktop {
-        padding-left: $contentpaddingLarge;
-        padding-right: $contentpaddingLarge;
-    }
+//     @include desktop {
+//         padding-left: $contentpaddingLarge;
+//         padding-right: $contentpaddingLarge;
+//     }
 
-    @include desktopXL {
-        padding-left: $contentpaddingLarge;
-        padding-right: $contentpaddingLarge;
-    }
-}
+//     @include desktopXL {
+//         padding-left: $contentpaddingLarge;
+//         padding-right: $contentpaddingLarge;
+//     }
+// }

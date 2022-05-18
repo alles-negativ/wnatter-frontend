@@ -16,7 +16,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'W-Natter',
+    title: 'alles-negativ stack',
     htmlAttrs: {
       lang: 'de'
     },
@@ -31,9 +31,9 @@ export default {
       { hid: 'referrer', name: 'referrer', content: 'no-referrer-when-downgrade' },
       { hid: 'og:locale', property: 'og:locale', content: 'de_CH' },
       { hid: 'og:locale:alternate', property: 'og:locale:alternate', content: 'en_GB' },
-      { hid: 'og:site_name', property: 'og:site_name', content: 'Alles-Negativ - Stack' },
+      { hid: 'og:site_name', property: 'og:site_name', content: 'W.Natter | Messtechnik' },
       { hid: 'og:type', property: 'og:type', content: 'website' },
-      { hid: 'og:title', property: 'og:title', content: 'Alles Negativ - Stack' },
+      { hid: 'og:title', property: 'og:title', content: 'W.Natter | Messtechnik' },
       { hid: 'og:description', property: 'og:description', content: 'This is the alles-negativ nuxt/kirby stack' },
       { hid: 'og:image', property: 'og:image', content: 'https://linktofrontend/alles-negativ-static-image.jpg' },
       { hid: 'og:image:width', property: 'og:image:width', content: '2121' },
@@ -46,7 +46,7 @@ export default {
     ],
     script: [
       // include scripts in static folder here
-      // {src: "/script.js"}
+      {src: "/script.js"}
     ]
   },
 
@@ -84,45 +84,45 @@ export default {
   modules: [
     '@nuxtjs/axios',
     '@nuxtjs/i18n',
-    '@nuxtjs/moment'
+    '@nuxtjs/moment',
   ],
 
   // Translation configuration
-  i18n: {
-    strategy: 'prefix',
-    locales: [
-      {
-         code: 'de',
-         name: 'Deutsch'
-      },
-      {
-         code: 'en',
-         name: 'English'
-      }
-    ],
-    defaultLocale: 'de',
-    vueI18n: {
-      fallbackLocale: 'de',
-      messages: {
-        de: {
-          locations: 'Standorte',
-          contact: 'Kontakt',
-          open: 'Öffnungszeiten',
-          accept: 'Oke! 👍',
-          readmore: 'mehr',
-          cookie: 'Diese Website verwendet Cookies',
-        },
-        en: {
-          locations: 'Locations',
-          contact: 'Contact',
-          open: 'Opening Hours',
-          accept: 'Oke! 👍',
-          readmore: 'read more',
-          cookie: 'This website uses cookies',
-        }
-      }
-    },
-  },
+  // i18n: {
+  //   strategy: 'prefix',
+  //   locales: [
+  //     {
+  //        code: 'de',
+  //        name: 'Deutsch'
+  //     },
+  //     {
+  //        code: 'en',
+  //        name: 'English'
+  //     }
+  //   ],
+  //   defaultLocale: 'de',
+  //   vueI18n: {
+  //     fallbackLocale: 'de',
+  //     messages: {
+  //       de: {
+  //         locations: 'Standorte',
+  //         contact: 'Kontakt',
+  //         open: 'Öffnungszeiten',
+  //         accept: 'Oke! 👍',
+  //         readmore: 'mehr',
+  //         cookie: 'Diese Website verwendet Cookies',
+  //       },
+  //       en: {
+  //         locations: 'Locations',
+  //         contact: 'Contact',
+  //         open: 'Opening Hours',
+  //         accept: 'Oke! 👍',
+  //         readmore: 'read more',
+  //         cookie: 'This website uses cookies',
+  //       }
+  //     }
+  //   },
+  // },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
@@ -142,6 +142,15 @@ export default {
   },
 
   proxy: {
+  },
+
+  sitemap: {
+    hostname: 'https://wwww.wnatter.ch',
+    gzip: true,
+  },
+
+  robots: {
+    /* module options */
   },
 
   image: {

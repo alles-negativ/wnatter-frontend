@@ -1,210 +1,82 @@
 @use "assets/css/main/colors" as *;
 @use "assets/css/main/breakpoints" as *;
-
-nav {
-    position: absolute;
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-}
+@use "assets/css/main/main" as *;
 
 .nav {
-    position: fixed;
     display: flex;
-    bottom: 36px;
-    justify-content: center;
-    align-items: center;
-    width: auto;
-    height: 45px;
-    background: $black;
-    border-radius: 200px;
-    padding: 5px;
+    flex-flow: row wrap;
+    width: 100%;
 
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
+    @include tablet {
+        border-bottom: $border;
+    }
+
+    @include desktop {
+        border-bottom: $border;
+    }
+
+    @include desktopXL {
+        border-bottom: $border;
+    }
+
+    &__content {
         display: flex;
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-items: center;
-    }
+        flex-flow: row wrap;
+        width: 100%;
 
-    .item {
-        display: flex;  
-        height: 35px;
-        width: auto;
-        border-radius: 200px;
-        color: $white;
-        background-color: $black;
-        justify-content: center;
-        align-items: center;
+        &:last-child {
+            border-right: none;
+        }
 
-        &:hover {
-            background-color: $white;
-            border-radius: 200px;
-            transition: 0.2s;
+        &--text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: $border;
+            border-right: $border;
+            width: 50%;
+            height: 8vh;
+
+            @include tablet {
+                width: 25%;
+                border-right: $border;
+                border-bottom: none;
+                height: 5vh;
+            }
+        
+            @include desktop {
+                width: 25%;
+                border-right: $border;
+                border-bottom: none;
+                height: 5vh;
+            }
+        
+            @include desktopXL {
+                width: 25%;
+                border-right: $border;
+                border-bottom: none;
+                height: 5vh;
+            }
+
+            &:nth-child(2) {
+                border-right: none;
+
+                @include tablet {
+                    border-right: $border;
+                }
             
-            .text__menu {
-                color: $black;
-            }
-        }
-    }
-}
-
-.image {
-    display: flex;
-    box-sizing: border-box;
-    justify-content: center;
-    align-items: center;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-
-    &__home {
-        background-repeat: no-repeat;
-        background-position: center center;
-
-        &:hover {
-            background: $white;
-            background-repeat: no-repeat;
-            background-position: center center;
-            transition: 0.2s;
-        }
-
-        &.nuxt-link-active {
-            background: $black;
-            background-repeat: no-repeat;
-            background-position: center center;
-        }
-
-        &.nuxt-link-exact-active {
-            background: $white;
-            background-repeat: no-repeat;
-            background-position: center center;
-        }
-    }
-
-    &__phone {
-        background-repeat: no-repeat;
-        background-position: center center;
-        border-radius: 50%;
-        border: thin solid $white;
-
-        @include tablet {
-            display: none;
-        }
-
-        @include desktop {
-            display: none;
-        }
-
-        @include desktopXL {
-            display: none;
-        }
-
-        &:hover {
-            background: $white;
-            background-repeat: no-repeat;
-            background-position: center center;
-            border: none;
-            transition: 0.2s;
-        }
-    }
-
-    &__mail {
-        display: none;
-        background-repeat: no-repeat;
-        background-position: center center;
-        border-radius: 50%;
-        border: thin solid $white;
-
-        .image__link--en {
-            display: none;
-        }
-
-        &.en {
-            .image__link--en {
-                display: block;
+                @include desktop {
+                    border-right: $border;
+                }
+            
+                @include desktopXL {
+                    border-right: $border;
+                }
             }
 
-            .image__link--de {
-                display: none;
+            &:last-child {
+                border-right: none;
             }
         }
-
-        @include tablet {
-            display: block;
-        }
-
-        @include desktop {
-            display: block;
-        }
-        
-        @include desktopXL {
-            display: block;
-        }
-
-        &:hover {
-            background: $white;
-            background-repeat: no-repeat;
-            background-position: center center;
-            border: none;
-            transition: 0.2s;
-        }
-    }
-
-    &__link {
-        width: 35px;
-        height: 35px;
-    }
-}
-
-p {
-    height: 35px;
-    width: auto;
-    padding-left: 9px;
-    padding-right: 9px;
-    padding-bottom: 4px;
-    padding-top: 4px;
-
-        @include mobileXS {
-            font-size: 13px;
-            padding-left: 7px;
-            padding-right: 7px;
-            padding-bottom: 4px;
-            padding-top: 4px;
-        }
-
-    &.en {
-        padding-left: 8px;
-        padding-right: 8px;
-        
-        @include mobileXS {
-            padding-left: 6px;
-            padding-right: 6px;
-        }
-    }
-}
-
-nav li a {
-  display: block;
-  text-decoration: none;
-  color: $white;
-}
-
-nav li {
-    a.nuxt-link-exact-active  {
-        color: $black;
-        background-color: $white;
-        border-radius: 200px;
-    }
-
-    a.nuxt-link-active  {
-        color: $black;
-        background-color: $white;
-        border-radius: 200px;
     }
 }

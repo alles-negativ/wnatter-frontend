@@ -1,21 +1,13 @@
 <template>
   <footer>
     <div class="container">
-      <div class="container__top">
+      <!-- <div class="container__top">
         <div class="contact">
-          <p class="text__small">{{ footer.headeremail }}</p>
-          <p class="text__small">{{ footer.headertel }}</p>
-          <p class="text__small">{{ $t('open') }}<br>{{ footer.headeropening }}</p>
+          <p class="text__small">{{ footer.contactmail }}</p>
+          <p class="text__small">{{ footer.contacttel }}</p>
+          <div class="text__small" v-html="footer.contactadd"></div>
         </div>
-        <div class="legal">
-          <nuxt-link :to="localePath('/' + 'kontakt#impressum')">
-            <p class="text__small">Impressum</p>
-          </nuxt-link>
-        </div>
-      <div class="standorte">
-        <p class="text__footer">{{ $t('locations') }}</p>
-      </div>
-      </div>
+      </div> -->
     </div>
   </footer>
 </template>
@@ -31,11 +23,11 @@ export default {
     },
     async fetch() {
         const { json: data } = await this.$kirby.find({
-            "query": "page('kontakt')",
+            "query": "page('home')",
             "select": {
-                "headeremail": true,
-                "headertel": true,
-                "headeropening": true,
+                "contactmail": true,
+                "contacttel": true,
+                "contactadd": true,
             }
         }, this.$nuxt.context.app.i18n.locale)
         this.footer = data
