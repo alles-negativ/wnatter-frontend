@@ -1,6 +1,6 @@
 <template>
   <div class="person" id="person">
-    <nuxt-img class="person__content--image" :src="person.images[0].url" :alt="person.images[0].alt" />
+    <nuxt-img class="person__content--image" :src="person.images[2].url" :alt="person.images[2].alt" />
     <div class="person__content">
       <h1 class="person__content--title">{{ person.persontitle }}</h1>
       <div class="person__content--text" v-html="person.persontext"></div>

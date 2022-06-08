@@ -2,7 +2,7 @@
 <div class="header">
   <div class="header__content">
       <!-- <nuxt-img class="header__content--logo" :src="header.images[0].url" :alt="header.images[0].alt" /> -->
-      <nuxt-img class="header__content--image" :src="header.images[1].url" :alt="header.images[1].alt" />
+      <nuxt-img class="header__content--image" :src="header.images[0].url" :alt="header.images[0].alt" />
   </div>
 </div>
 </template>

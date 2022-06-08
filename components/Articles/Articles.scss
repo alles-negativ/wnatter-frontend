@@ -25,6 +25,7 @@
         width: 100%;
         border-right: $border;
         border-bottom: $border;
+        padding: 3em;
 
         @include tablet {
             width: 50%;
@@ -46,7 +47,7 @@
         }
 
         &--text {
-            margin-bottom: 1.5em;
+            margin: 1em 0em 1em 0em;
         }
     }
 }    

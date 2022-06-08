@@ -4,7 +4,7 @@
     <h1 class="firma__content--title">{{ firma.firmatitle }}</h1>
     <div class="firma__content--text" v-html="firma.firmatext"></div>
   </div>
-  <nuxt-img class="firma__content--image" :src="firma.images[0].url" :alt="firma.images[0].alt" />
+  <nuxt-img class="firma__content--image" :src="firma.images[1].url" :alt="firma.images[1].alt" />
 </div>
 </template>
 

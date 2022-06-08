@@ -23,8 +23,9 @@
 
     &__content {
         display: flex;
-        flex-flow: row wrap;
+        flex-flow: column wrap;
         width: 100%;
+        padding: 3em;
 
             @include tablet {
                 width: 50%;
@@ -36,10 +37,11 @@
 
             @include desktopXL {
                 width: 50%;
-            }
+            }  
 
         &--text {
             width: 100%;
+            margin: 1em 0em 1em 0em;
 
             span {
                width: 100%; 
@@ -58,14 +60,17 @@
 
             @include tablet {
                 width: 50%;
+                border-right: $border;
             }
 
             @include desktop {
                 width: 50%;
+                border-right: $border;
             }
 
             @include desktopXL {
                 width: 50%;
+                border-right: $border;
             }
         }
     }

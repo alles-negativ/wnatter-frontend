@@ -5,7 +5,6 @@
             <p class="nav__content--text" onclick="scrollFirma()">Firma</p>
             <p class="nav__content--text" onclick="scrollPerson()">Person</p>
             <p class="nav__content--text" onclick="scrollContact()">Kontakt</p>
-            <!-- ids: angebot, firma, person, contact -->
         </div>
     </div>
 </template>
