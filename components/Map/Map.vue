@@ -1,11 +1,13 @@
 <template>
     <div class="contact" id="contact">
         <div class="contact__content">
-            <div class="contact__content--text" v-html="contact.contactadd"></div>
-            <p class="contact__content--text">{{ contact.contacttel }}</p>
-            <a class="contact__content--text" :href="'mailto:' + contact.contactmail">
-                <p>{{ contact.contactmail }}</p>
+            <h1 class="contact__content--title">Kontakt</h1>
+            <div class="text__big" v-html="contact.contactadd"></div>
+            <p class="text__big">{{ contact.contacttel }}</p>
+            <a class="text__big" id="button" :href="'mailto:' + contact.contactmail">
+                {{ contact.contactmail }}
             </a>
+            <div class="text__big" v-html="contact.contactlinks"></div>
         </div>
         <div class="map" v-html="contact.mapframe"></div>
     </div>
@@ -27,6 +29,7 @@ export default {
                 "contactmail": true,
                 "contacttel": true,
                 "contactadd": true,
+                "contactlinks": true,
                 "mapframe": true,
             }
         }, this.$nuxt.context.app.i18n.locale)

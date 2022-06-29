@@ -14,7 +14,6 @@
         flex-flow: column wrap;
         justify-content: left;
         width: 100%;
-        padding: 3em;
 
             @include tablet {
                 width: 50%;
@@ -31,19 +30,65 @@
                 border-right: $border;
             }
 
-            &--text {
+            &--title {
+                border-bottom: $border;
+                padding-left: 24px;
+                height: 6.5vh;
+            }
+
+            .text__big {
                 width: 100%;
-                margin-bottom: 1em;
+                margin: 0.5em 0em 0.5em 0em;
+                padding-left: 24px;
+                padding-bottom: 20px;
+                border-bottom: $border;
+                border-bottom: $border;
 
                 &:last-child {
                     margin-bottom: 0em;
+                    border-bottom: none;
+                }
+    
+                @include tablet {
+                    padding-right: 48px;
+                }
+    
+                @include desktop {
+                    padding-right: 48px;
+                }
+    
+                @include desktopXL {
+                    padding-right: 48px;
+                }
+            }
+
+            #button.text__big {
+                width: 100%;
+                margin: 0.5em 0em 0.5em 0em;
+                padding-left: 24px;
+    
+                @include tablet {
+                    padding-right: 48px;
+                }
+    
+                @include desktop {
+                    padding-right: 48px;
+                }
+    
+                @include desktopXL {
+                    padding-right: 48px;
                 }
 
+                &:hover {
+                    color: $blue;
+                }
             }
-    }
+        }
+    
 
     .map {
         width: 50%;
+        padding: 12px;
 
         ::v-deep iframe {
             width: 100%;
