@@ -1,7 +1,7 @@
 <template>
     <div class="container" id="angebot"> 
         <div class="container__content" v-for="article in articles" :key="article.id">
-            <h3 class="container__content--title" v-html="article.contenttitle"></h3>
+            <h1 class="container__content--title" v-html="article.contenttitle"></h1>
             <div class="container__content--text" v-html="article.contenttext"></div>
         </div>
     </div>
