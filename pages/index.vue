@@ -1,7 +1,9 @@
 <template>
   <main>
-      <Articles />
+      <Spacer />
       <Firma />
+      <Articles />
+      <Anfrage />
       <Person />
       <Map />
   </main>
