@@ -1,0 +1,90 @@
+@use "assets/css/main/colors" as *;
+@use "assets/css/main/breakpoints" as *;
+@use "assets/css/main/main" as *;
+
+.angebot {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    height: auto;
+    border-bottom: $border;
+
+    .spacer__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 33.333%;
+        border-right: $border;
+
+        h1 {
+            font-weight: 300;
+        }
+
+        &:last-child {
+            display: none;
+            border-right: none;
+            border-left: $border;
+
+            @include tablet {
+                display: flex;
+            }
+
+            @include desktop {
+                display: flex;
+            }
+
+            @include desktopXL {
+                display: flex;
+            }
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        width: 66.666%;
+        height: 30vh;
+
+            @include tablet {
+                width: 66.666%;
+            }
+
+            @include desktop {
+                width: 66.666%;
+            }
+
+            @include desktopXL {
+                width: 66.666%;
+            }
+        
+        &--title {
+            width: 100%;
+            height: 6.5vh;
+            border-bottom: $border;
+            padding-left: 24px;
+        }    
+
+        &--text {
+            width: 100%;
+            height: 17vh;
+            border-bottom: $border;
+            padding: 24px 0px 0px 24px;
+  
+        }
+        &--button {
+            display: flex;
+            width: 50%;
+            height: 6.5vh;
+            align-items: center;
+            justify-content: center;
+            color: $black;
+            border-right: $border;
+
+            &:hover {
+                color: $blue;
+                background-color: $white;
+            }
+        }
+    }
+}
