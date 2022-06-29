@@ -2,38 +2,40 @@
 Global definitions of typography
 */
 
+@use "main" as *;
 @use "breakpoints" as *;
 @use "colors" as *;
 
 h1 {
-    font-family: SpaceGrotesk, sans-serif;
-    font-weight: 700;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
     font-style: normal;
-    font-size: 30px;
+    text-transform: uppercase;
+    font-size: 42px;
 
-  @include tablet {
-        font-size: 35px;
-  }
+    @include tablet {
+        font-size: 48px;
+    }
 
-  @include desktop {
-        font-size: 40px;
-  }
+    @include desktop {
+        font-size: 48px;
+    }
 
-  @include desktopXL {
-        font-size: 40px;
-  }
+    @include desktopXL {
+        font-size: 48px;
+    }
 }
 
 h2 {
-    font-family: SpaceGrotesk, sans-serif;
-    font-weight: 700;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
     font-style: normal;
     font-size: 50px;
 }
 
 h3 {
-    font-family: SpaceGrotesk, sans-serif;
-    font-weight: 700;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
     font-style: normal;
     font-size: 30px;
 
@@ -51,35 +53,36 @@ h3 {
 }
 
 p, button {
-    font-family: SpaceGrotesk, sans-serif;
+    font-family: Inter, sans-serif;
+    font-weight: 300;
     font-style: normal;
     line-height: 26px;
 }
 
 .text {
-    font-family: SpaceGrotesk, sans-serif;
-    font-weight: 400;
+    font-family: Inter, sans-serif;
+    font-weight: 300;
     font-style: normal;
     font-size: 18px;
-    line-height: 26px;
+    // line-height: 26px;
     text-decoration: none;
 
     &__big {
-        font-weight: 500;
+        font-weight: 400;
 
         @include tablet {
-            font-size: 20px;
-            line-height: 26px;
+            font-size: 19px;
+            // line-height: 26px;
         }
 
         @include desktop {
-            font-size: 24px;
-            line-height: 31px;
+            font-size: 19px;
+            // line-height: 31px;
         }
 
         @include desktopXL {
-            font-size: 30px;
-            line-height: 38px;
+            font-size: 19px;
+            // line-height: 38px;
         }   
 
         &--black {
@@ -96,23 +99,42 @@ p, button {
     }
 
     &__big > p {
-        font-weight: 500;
+        font-weight: 300;
 
         @include tablet {
-            font-size: 20px;
-            line-height: 26px;
+            font-size: 19px;
+            line-height: 1.6;
         }
 
         @include desktop {
-            font-size: 24px;
-            line-height: 31px;
+            font-size: 19px;
+            line-height: 1.6;
         }
 
         @include desktopXL {
-            font-size: 30px;
-            line-height: 38px;
+            font-size: 19px;
+            line-height: 1.6;
         }
-    }     
+    }
+    
+    &__big > a {
+        font-weight: 300;
+
+        @include tablet {
+            font-size: 19px;
+            line-height: 1.6;
+        }
+
+        @include desktop {
+            font-size: 19px;
+            line-height: 1.6;
+        }
+
+        @include desktopXL {
+            font-size: 19px;
+            line-height: 1.6;
+        }
+    }
 
     &__medium {
         font-size: 18px;
@@ -127,24 +149,20 @@ p, button {
     &__footer {
         font-size: 16px;
         line-height: 26px;
-        font-weight: 600;
+        font-weight: 300;
     }
 
     &__menu {
-        font-weight: 500;
+        font-weight: 300;
         font-size: 15px;
         line-height: auto;
         text-transform: capitalize;
     }
-
-    a:hover {
-        color: $blue;
-    }
 }
 
 span {
-    font-family: SpaceGrotesk, sans-serif;
-    font-weight: 600;
+    font-family: Inter, sans-serif;
+    font-weight: 300;
     font-style: normal;
     font-size: 35px;
     line-height: 45px;
@@ -166,10 +184,8 @@ span {
 }
 
 a {
+    font-family: Inter;
+    font-weight: 300;
     color: $black;
-    text-decoration: underline;
-
-    &:hover {
-        color: blue;
-    }
+    text-decoration: none;
 }

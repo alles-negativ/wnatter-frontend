@@ -4,41 +4,49 @@ this file is being imported into global.scss
 */
 
 @font-face {
-  font-family: 'SpaceGrotesk';
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 300;
   font-display: swap;
-  src: url('~assets/fonts/SpaceGrotesk-Light.ttf') format('truetype');
+  src: url('~assets/fonts/Inter-Regular.otf') format('opentype');
 }
 
 @font-face {
-  font-family: 'SpaceGrotesk';
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url('~assets/fonts/Inter-Italic.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('~assets/fonts/SpaceGrotesk-Regular.ttf') format('truetype');
+  src: url('~assets/fonts/Inter-Medium.otf') format('opentype');
 }
 
 @font-face {
-  font-family: 'SpaceGrotesk';
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('~assets/fonts/Inter-MediumItalic.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url('~assets/fonts/SpaceGrotesk-Medium.ttf') format('truetype');
+  src: url('~assets/fonts/Inter-SemiBold.otf') format('opentype');
 }
 
 @font-face {
-  font-family: 'SpaceGrotesk';
-  font-style: normal;
-  font-weight: 600;
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 500;
   font-display: swap;
-  src: url('~assets/fonts/SpaceGrotesk-SemiBold.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'SpaceGrotesk';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url('~assets/fonts/SpaceGrotesk-Bold.ttf') format('truetype');
+  src: url('~assets/fonts/Inter-SemiBoldItalic.otf') format('opentype');
 }
