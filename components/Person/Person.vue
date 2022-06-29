@@ -3,7 +3,12 @@
     <nuxt-img class="person__content--image" :src="person.images[2].url" :alt="person.images[2].alt" />
     <div class="person__content">
       <h1 class="person__content--title">{{ person.persontitle }}</h1>
-      <div class="person__content--text" v-html="person.persontext"></div>
+      <div class="text__big" v-html="person.persontext"></div>
+      <div class="person__content--space">
+        <div class="space__item"><h1>↙</h1></div>
+        <div class="space__item"></div>
+        <div class="space__item"></div>
+      </div>
     </div>
   </div>
 </template>
