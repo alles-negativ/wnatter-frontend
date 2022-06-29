@@ -1,8 +1,12 @@
 <template>
 <div class="firma" id="firma">
   <div class="firma__content">
-    <h1 class="firma__content--title">{{ firma.firmatitle }}</h1>
-    <div class="firma__content--text" v-html="firma.firmatext"></div>
+    <h1 class="firma__content--title">Firma</h1>
+    <div class="text__big" v-html="firma.firmatext"></div>
+    <div class="firma__content--space">
+      <div class="space__item"></div>
+      <div class="space__item"><h1>↓</h1></div>
+    </div>
   </div>
   <nuxt-img class="firma__content--image" :src="firma.images[1].url" :alt="firma.images[1].alt" />
 </div>
