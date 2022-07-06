@@ -14,7 +14,6 @@ export default {
     data() {
         return {
             articles: [],
-            numberOfColumns: 1
         }
     },
     async fetch() {

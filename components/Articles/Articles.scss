@@ -6,51 +6,64 @@
     display: flex;
     flex-flow: row wrap;
     width: 100%;
-
-    @include tablet {
-        border-bottom: $border;
-    }
-
-    @include desktop {
-        border-bottom: $border;
-    }
-
-    @include desktopXL {
-        border-bottom: $border;
-    }
+    height: auto;
+    border-bottom: $border;
 
     &__content {
         display: flex;
         flex-flow: column wrap;
         width: 100%;
         border-right: $border;
-        border-bottom: $border;
-        padding: 3em;
+        border-top: $border;
 
         @include tablet {
             width: 50%;
             border-bottom: none;
+
+            &:last-child {
+                border-right: none;
+                border-top: none;
+            }
         }
     
         @include desktop {
             width: 50%;
             border-bottom: none;
+
+            &:last-child {
+                border-right: none;
+                border-top: none;
+            }
         }
     
         @include desktopXL {
             width: 50%;
             border-bottom: none;
+
+            &:last-child {
+                border-right: none;
+                border-top: none;
+            }
         }
 
-        &:last-child {
-            border-right: none;
+        &:first-child {
+            border-top: none;
+        }
+
+        &--title {
+            display: flex;
+            align-items: center;
+            border-bottom: $border;
+            padding-left: 24px;
+            height: 6.5vh;
         }
 
         &--text {
             margin: 1em 0em 1em 0em;
+            padding-left: 24px;
         }
     }
-}    
+}
 
 h3 {
     margin-top: 1em;
