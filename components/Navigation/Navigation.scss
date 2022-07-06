@@ -77,6 +77,12 @@
             &:last-child {
                 border-right: none;
             }
+
+            &:hover {
+                color: $blue;
+                background-color: $white;
+                cursor: pointer;
+            }
         }
     }
 }
