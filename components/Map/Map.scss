@@ -36,12 +36,37 @@
                 height: 6.5vh;
             }
 
+            .inside__container {
+                display: flex;
+                flex-flow: row wrap;
+                border-bottom: $border;
+            }
+
+            &--button {
+                display: flex;
+                width: 50%;
+                height: 6.5vh;
+                align-items: center;
+                justify-content: center;
+                color: $black;
+                border-right: $border;
+
+                &:last-child {
+                    border-right: none;
+                }
+
+                &:hover {
+                    color: $blue;
+                    background-color: $white;
+                    cursor: pointer;
+                }
+            }    
+
             .text__big {
                 width: 100%;
-                margin: 0.5em 0em 0.5em 0em;
                 padding-left: 24px;
                 padding-bottom: 20px;
-                border-bottom: $border;
+                padding-top: 20px;
                 border-bottom: $border;
 
                 &:last-child {

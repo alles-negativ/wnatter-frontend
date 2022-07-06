@@ -3,10 +3,12 @@
         <div class="contact__content">
             <h1 class="contact__content--title">Kontakt</h1>
             <div class="text__big" v-html="contact.contactadd"></div>
-            <p class="text__big">{{ contact.contacttel }}</p>
-            <a class="text__big" id="button" :href="'mailto:' + contact.contactmail">
-                {{ contact.contactmail }}
-            </a>
+            <div class="inside__container">
+                <p class="contact__content--button">{{ contact.contacttel }} ↗︎</p>
+                <a class="contact__content--button" id="button" :href="'mailto:' + contact.contactmail">
+                    {{ contact.contactmail }} ↗︎
+                </a>
+            </div>
             <div class="text__big" v-html="contact.contactlinks"></div>
         </div>
         <div class="map" v-html="contact.mapframe"></div>
