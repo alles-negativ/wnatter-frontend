@@ -18,7 +18,8 @@ const imageOptions = {
   "presets": {},
   "provider": "static",
   "domains": [
-    "localhost:8888"
+    "localhost:8888",
+    "wnatterbackend.carlonatter.ch"
   ],
   "alias": {}
 }

@@ -24,23 +24,11 @@ body {
     background-color: $white;
 }
 
-// .wrapper {
-//    margin-bottom: 10em;
-//    padding-left: $contentpadding;
-//    padding-right: $contentpadding;
+ul {
+    padding: 10px 0px 10px 15px;
 
-//     @include tablet {
-//         padding-left: $contentpaddingLarge;
-//         padding-right: $contentpaddingLarge;
-//     }
+    li {
+        padding-left: 24px;
+    }
+}
 
-//     @include desktop {
-//         padding-left: $contentpaddingLarge;
-//         padding-right: $contentpaddingLarge;
-//     }
-
-//     @include desktopXL {
-//         padding-left: $contentpaddingLarge;
-//         padding-right: $contentpaddingLarge;
-//     }
-// }
