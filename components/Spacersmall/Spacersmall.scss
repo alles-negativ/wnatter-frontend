@@ -32,8 +32,8 @@
             font-weight: 300;
         }
 
-        &:last-child {
-            border-right: none;
+        &:first-child {
+            border-left: none;
             // background: rgb(55,114,255);
             // background: radial-gradient(circle, rgba(55,114,255,1) 0%, rgba(9,9,121,0) 95%);
         }
