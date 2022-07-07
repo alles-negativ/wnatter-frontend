@@ -50,12 +50,47 @@
             border-top: none;
         }
 
+        &--head {
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            border-bottom: $border;
+        }
+
+        &--number {
+            width: 10%;
+            padding-left: 12px;
+            padding-right: 12px;
+            margin: 0;
+
+            @include tablet {
+                padding-top: 3px;
+                padding-left: 24px;
+                padding-right: 24px;
+
+            }
+        
+            @include desktop {
+                padding-top: 3px;
+                padding-left: 24px;
+                padding-right: 24px;
+            }
+        
+            @include desktopXL {
+                padding-top: 3px;
+                padding-left: 24px;
+                padding-right: 24px;
+    
+            }
+        }
+
         &--title {
             display: flex;
             align-items: center;
-            border-bottom: $border;
-            padding-left: 24px;
+            width: 90%;
             height: 6.25vh;
+            border-left: $border;
+            padding-left: 24px;
         }
 
         &--text {
