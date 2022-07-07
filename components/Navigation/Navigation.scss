@@ -35,27 +35,27 @@
             border-bottom: $border;
             border-right: $border;
             width: 50%;
-            height: 8vh;
+            height: 6.25vh;
 
             @include tablet {
                 width: 25%;
                 border-right: $border;
                 border-bottom: none;
-                height: 5vh;
+                height: 6.25vh
             }
         
             @include desktop {
                 width: 25%;
                 border-right: $border;
                 border-bottom: none;
-                height: 5vh;
+                height: 6.25vh
             }
         
             @include desktopXL {
                 width: 25%;
                 border-right: $border;
                 border-bottom: none;
-                height: 5vh;
+                height: 6.25vh
             }
 
             &:nth-child(2) {
