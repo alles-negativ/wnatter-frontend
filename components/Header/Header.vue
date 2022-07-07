@@ -1,7 +1,16 @@
 <template>
 <div class="header">
   <div class="header__content">
-      <!-- <nuxt-img class="header__content--logo" :src="header.images[0].url" :alt="header.images[0].alt" /> -->
+      <div class="header__content--top">
+        <div class="logo__container">
+          <nuxt-img class="header__content--logo" :src="header.images[2].url" :alt="header.images[2].alt" />
+        </div>
+        <div class="spacer">
+        </div>
+        <div class="spacer">
+          <h1>↓</h1>  
+        </div>
+      </div>
       <nuxt-img class="header__content--image" :src="header.images[0].url" :alt="header.images[0].alt" />
   </div>
 </div>
