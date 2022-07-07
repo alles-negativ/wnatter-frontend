@@ -1,0 +1,41 @@
+@use "assets/css/main/colors" as *;
+@use "assets/css/main/breakpoints" as *;
+@use "assets/css/main/main" as *;
+
+.spacer {
+    display: flex;
+    flex-flow: row wrap-reverse;
+    width: 100%;
+    height: 6.25vh;
+    border-bottom: $border;
+
+    @include tablet {
+        height: 6.25vh;
+    }
+
+    @include desktop {
+        height: 6.25vh;
+    }
+
+    @include desktopXL {
+        height: 6.25vh;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 33.3%;
+        border-left: $border;
+
+        h1 {
+            font-weight: 300;
+        }
+
+        &:last-child {
+            border-right: none;
+            // background: rgb(55,114,255);
+            // background: radial-gradient(circle, rgba(55,114,255,1) 0%, rgba(9,9,121,0) 95%);
+        }
+    }
+}

@@ -2,9 +2,12 @@
   <main>
       <Spacer />
       <Firma />
+      <Spacersmall />
       <Articles />
       <Anfrage />
+      <Spacersmall />
       <Person />
+      <Spacersmall />
       <Map />
   </main>
 </template>
