@@ -1,9 +1,12 @@
 {
+  "Anfrage": {
+    "description": "Auto imported from components/Anfrage/Anfrage.vue"
+  },
+  "Firma": {
+    "description": "Auto imported from components/Firma/Firma.vue"
+  },
   "Articles": {
     "description": "Auto imported from components/Articles/Articles.vue"
-  },
-  "Footer": {
-    "description": "Auto imported from components/Footer/Footer.vue"
   },
   "Header": {
     "description": "Auto imported from components/Header/Header.vue"
@@ -11,20 +14,20 @@
   "CookieBox": {
     "description": "Auto imported from components/CookieBox/CookieBox.vue"
   },
+  "Footer": {
+    "description": "Auto imported from components/Footer/Footer.vue"
+  },
   "Map": {
     "description": "Auto imported from components/Map/Map.vue"
-  },
-  "Firma": {
-    "description": "Auto imported from components/Firma/Firma.vue"
   },
   "Navigation": {
     "description": "Auto imported from components/Navigation/Navigation.vue"
   },
-  "Anfrage": {
-    "description": "Auto imported from components/Anfrage/Anfrage.vue"
-  },
   "Person": {
     "description": "Auto imported from components/Person/Person.vue"
+  },
+  "Spacersmall": {
+    "description": "Auto imported from components/Spacersmall/Spacersmall.vue"
   },
   "Spacer": {
     "description": "Auto imported from components/Spacer/Spacer.vue"

@@ -6,13 +6,14 @@ You can directly use them in pages and other components without the need to impo
 
 **Tip:** If a component is conditionally rendered with `v-if` and is big, it is better to use `Lazy` or `lazy-` prefix to lazy load.
 
+- `<Anfrage>` | `<anfrage>` (components/Anfrage/Anfrage.vue)
+- `<Firma>` | `<firma>` (components/Firma/Firma.vue)
 - `<Articles>` | `<articles>` (components/Articles/Articles.vue)
-- `<Footer>` | `<footer>` (components/Footer/Footer.vue)
 - `<Header>` | `<header>` (components/Header/Header.vue)
 - `<CookieBox>` | `<cookie-box>` (components/CookieBox/CookieBox.vue)
+- `<Footer>` | `<footer>` (components/Footer/Footer.vue)
 - `<Map>` | `<map>` (components/Map/Map.vue)
-- `<Firma>` | `<firma>` (components/Firma/Firma.vue)
 - `<Navigation>` | `<navigation>` (components/Navigation/Navigation.vue)
-- `<Anfrage>` | `<anfrage>` (components/Anfrage/Anfrage.vue)
 - `<Person>` | `<person>` (components/Person/Person.vue)
+- `<Spacersmall>` | `<spacersmall>` (components/Spacersmall/Spacersmall.vue)
 - `<Spacer>` | `<spacer>` (components/Spacer/Spacer.vue)
