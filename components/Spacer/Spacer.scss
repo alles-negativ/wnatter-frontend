@@ -6,19 +6,19 @@
     display: flex;
     flex-flow: row wrap-reverse;
     width: 100%;
-    height: 12vh;
+    height: 12.5vh;
     border-bottom: $border;
 
     @include tablet {
-        height: 15vh;
+        height: 12.5vh;
     }
 
     @include desktop {
-        height: 15vh;
+        height: 12.5vh;
     }
 
     @include desktopXL {
-        height: 15vh;
+        height: 12.5vh;
     }
 
     &__item {

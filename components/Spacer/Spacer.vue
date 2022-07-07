@@ -9,31 +9,12 @@
 <script>
 
 export default {
-  name: 'Person',
+  name: 'Spacer',
 
   data() {
     return {
-      person: [],
+
     }
-  },
-  async fetch() {
-    const { json: data } = await this.$kirby.find({
-        "query": "page('home')",
-          "select": {
-              "persontitle": true,
-              "persontext": true,
-              "personimage": true,
-              "images": {
-                "query": "page.files",
-                "select": {
-                  "name": true,
-                  "url": true,
-                  "alt": true
-                }
-              }
-            }
-    }, this.$nuxt.context.app.i18n.locale)
-    this.person = data
   },
 }
 </script>
