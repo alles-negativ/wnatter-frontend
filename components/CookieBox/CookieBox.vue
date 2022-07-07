@@ -2,16 +2,15 @@
   <VueIfBot>
     <cookie-consent>
       <template slot="message">
-        <p>{{ $t('cookie') }}</p>
-        <a class="btn btn-link" href="/my-cookies">
-          <p>
-            {{ $t('readmore') }}
-          </p>
-        </a>
+        <div class="message__container">
+          <p>Diese Seite verwendet Cookies</p>
+        </div>
       </template>
       <template slot="button">
-        <div class="accept__button">
-          <p class="accept__text">{{ $t('accept') }}</p>
+        <div class="button__container">
+          <div class="accept__button">
+            <p class="accept__text">Oke!</p>
+          </div>
         </div>
       </template>
     </cookie-consent>

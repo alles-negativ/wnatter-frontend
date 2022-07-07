@@ -1,6 +1,6 @@
 <template>
   <div>
-    <!-- <CookieBox /> -->
+    <CookieBox />
     <Header />
     <Navigation />
     <div class="wrapper">
