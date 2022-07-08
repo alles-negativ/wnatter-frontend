@@ -10,34 +10,28 @@
     height: 45px;
     background-color: $white;
     border: $border;
-    width: 25%;
-    left: 0;
-    right: 0;
-    // animation: pulse 1s ease-in infinite;
+    width: 400px;
+    margin-top: 12.75vh;
 
     @include tablet {
         flex-flow: row wrap;
         height: 75px;
-        margin-right: 0em;
     }
 
     @include desktop {
         flex-flow: row wrap;
         height: 75px;
-        margin-right: 0em;
     }
 
     @include desktopXL {
         flex-flow: row nowrap;
         height: 75px;
-        margin-right: 0em;
     }
 
     .message__container {
         display: flex;
         align-items: center;
         justify-content: center;
-        // border-right: $border;
         height: 100%;
         width: 75%;
     }
@@ -85,12 +79,3 @@
         text-align: center;
     }
 }
-
-@keyframes pulse {
-        0%, 100% {
-            transform: translate(0, 5px)
-        }
-        50% {
-            transform: translate(0, 0)
-        }
-    }

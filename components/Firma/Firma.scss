@@ -39,7 +39,7 @@
             width: 100%;
             margin: 1.5em 0em 1.5em 0em;
             padding-left: 24px;
-            height: 31.25vh;
+            min-height: 31.25vh;
 
             @include tablet {
                 width: 90%;

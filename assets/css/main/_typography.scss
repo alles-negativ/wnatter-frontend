@@ -13,6 +13,10 @@ h1 {
     text-transform: uppercase;
     font-size: 42px;
 
+    @include mobileXS {
+        font-size: 32px;
+    }
+
     @include tablet {
         font-size: 48px;
     }

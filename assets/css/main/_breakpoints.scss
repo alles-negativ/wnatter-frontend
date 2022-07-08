@@ -14,7 +14,7 @@ $desktopXL-width: 1440.02px;
 }
 
 @mixin mobile {
-  @media (max-width: #{$phone-width}) {
+  @media (min-width: #{$phoneXS-width}) and (max-width: #{$tablet-width}) {
     @content;
   }
 }
