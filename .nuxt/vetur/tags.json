@@ -1,4 +1,7 @@
 {
+  "Anfrage": {
+    "description": "Auto imported from components/Anfrage/Anfrage.vue"
+  },
   "Articles": {
     "description": "Auto imported from components/Articles/Articles.vue"
   },
@@ -19,9 +22,6 @@
   },
   "Navigation": {
     "description": "Auto imported from components/Navigation/Navigation.vue"
-  },
-  "Anfrage": {
-    "description": "Auto imported from components/Anfrage/Anfrage.vue"
   },
   "Person": {
     "description": "Auto imported from components/Person/Person.vue"
