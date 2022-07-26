@@ -3,7 +3,7 @@
   <div class="header__content">
       <div class="header__content--top">
         <div class="logo__container">
-          <nuxt-img class="header__content--logo" :src="header.images[2].url" :alt="header.images[2].alt" />
+          <nuxt-img class="header__content--logo" :src="header.images[3].url" :alt="header.images[3].alt" />
         </div>
         <div class="spacer">
         </div>
