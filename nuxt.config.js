@@ -155,8 +155,7 @@ export default {
 
   image: {
     domains: [
-      'http://localhost:8888',
-      'https://wnatterbackend.carlonatter.ch'
+      'https://site.wnatter.ch/backend/panel'
     ]
   }
 }
