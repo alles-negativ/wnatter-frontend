@@ -35,7 +35,7 @@ export default {
       { hid: 'og:type', property: 'og:type', content: 'website' },
       { hid: 'og:title', property: 'og:title', content: 'W.Natter | Messtechnik' },
       { hid: 'og:description', property: 'og:description', content: 'Die Firma W. Natter, Lufthygiene, Messtechnik, Beratungen bietet Dienstleistungen im Umweltbereich Lufthygiene an.' },
-      { hid: 'og:image', property: 'og:image', content: 'https://linktofrontend/alles-negativ-static-image.jpg' },
+      { hid: 'og:image', property: 'og:image', content: 'https://wnatter/wnatter-static-image.jpg' },
       { hid: 'og:image:width', property: 'og:image:width', content: '2121' },
       { hid: 'og:image:height', property: 'og:image:height', content: '1414' },
       { hid: 'og:image:alt', property: 'og:image:alt', content: 'Example alt text for og:image' },
