@@ -16,6 +16,7 @@
 import metaTags from "../mixins/metaTags";
 
 export default {
+title: "Home",
 mixins: [metaTags],
 
   async asyncData({ app, $kirby }) {

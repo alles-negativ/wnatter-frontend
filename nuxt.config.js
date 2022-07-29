@@ -23,7 +23,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'content from config' },
+      { hid: 'description', name: 'description', content: 'Die Firma W. Natter, Lufthygiene, Messtechnik, Beratungen bietet Dienstleistungen im Umweltbereich Lufthygiene an.' },
       { hid: 'author', name: 'author', content: 'alles-negativ.ch' },
       { hid: 'keywords', name: 'keywords', content: 'W.Natter, Natter, Lufthygiene, Messtechnik, Beratung, Dienstleistungen, Umwelt, Heizungen' },
       { hid: 'theme-color', name: 'theme-color', content: '#ffffff' },
@@ -38,7 +38,7 @@ export default {
       { hid: 'og:image', property: 'og:image', content: 'https://wnatter/wnatter-static-image.jpg' },
       { hid: 'og:image:width', property: 'og:image:width', content: '2121' },
       { hid: 'og:image:height', property: 'og:image:height', content: '1414' },
-      { hid: 'og:image:alt', property: 'og:image:alt', content: 'Example alt text for og:image' },
+      { hid: 'og:image:alt', property: 'og:image:alt', content: 'Messgeräte im Einsatz' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
@@ -155,6 +155,7 @@ export default {
 
   image: {
     domains: [
+      'http://localhost:8888',
       'https://site.wnatter.ch/backend/panel'
     ]
   }
