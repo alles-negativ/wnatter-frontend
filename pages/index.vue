@@ -16,7 +16,9 @@
 import metaTags from "../mixins/metaTags";
 
 export default {
-title: "Home",
+head: {
+    title: 'W.Natter | Messtechnik',
+},
 mixins: [metaTags],
 
   async asyncData({ app, $kirby }) {
