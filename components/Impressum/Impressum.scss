@@ -1,0 +1,105 @@
+@use "assets/css/main/colors" as *;
+@use "assets/css/main/breakpoints" as *;
+@use "assets/css/main/main" as *;
+
+.impressum__link {
+    border-bottom: $border;
+    width: 100%;
+    padding-left: 24px;
+    font-size: 24px;
+}
+.impressum__link:hover {
+    color: blue;
+}
+
+.firma {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    height: auto;
+    border-bottom: $border;
+
+    &__content {
+        display: flex;
+        flex-flow: column wrap;
+        width: 100%;
+
+        &--title {
+            border-bottom: $border;
+            padding-left: 24px;
+            height: 6.25vh;
+        }
+
+        .text__big {
+            width: 100%;
+            margin: 1.5em 0em 1.5em 0em;
+            padding-left: 24px;
+
+        }
+
+        &--space {
+            display: flex;
+            flex-flow: row wrap;
+            border-top: $border;
+            border-bottom: $border;
+            width: 100%;
+            height: calc(12.5vh + 12px);
+
+            @include tablet {
+                border-bottom: none;
+                height: calc(12.5vh + 12px);
+            }
+
+            @include desktop {
+                border-bottom: none;
+                height: calc(12.5vh + 12px);
+            }
+
+            @include desktopXL {
+                border-bottom: none;
+                height: calc(12.5vh + 12px)
+            }
+
+            .space__item {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 50%;
+                border-right: $border;
+
+                h1 {
+                    font-weight: 300;
+                }
+
+                &:first-child {
+                    background: rgb(55,114,255);
+                    background: radial-gradient(circle, rgba(55,114,255,1) 0%, rgba(9,9,121,0) 95%);
+                }
+
+                &:last-child {
+                    border-right: none;
+                }
+            }
+        }
+
+        &--image {
+            display: block;
+            height: 500px;
+            object-fit: cover;
+            width: 100%;
+            padding: 12px;
+
+            @include tablet {
+                width: 50%;
+            }
+
+            @include desktop {
+                width: 50%;
+            }
+
+            @include desktopXL {
+                width: 50%;
+            }
+        }
+    }
+}

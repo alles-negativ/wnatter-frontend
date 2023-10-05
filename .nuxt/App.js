@@ -10,8 +10,9 @@ import '../assets/css/global.scss'
 
 import _6670707f from '../layouts/_error.vue'
 import _6f6c098b from '../layouts/default.vue'
+import _d3dc4d7e from '../layouts/impressum.vue'
 
-const layouts = { "__error": sanitizeComponent(_6670707f),"_default": sanitizeComponent(_6f6c098b) }
+const layouts = { "__error": sanitizeComponent(_6670707f),"_default": sanitizeComponent(_6f6c098b),"_impressum": sanitizeComponent(_d3dc4d7e) }
 
 export default {
   render (h, props) {

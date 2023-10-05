@@ -1,5 +1,12 @@
 [
   {
+    "name": "impressum",
+    "path": "/impressum",
+    "component": "/Users/carlonatter/_code/wnatter/wnatter-frontend/pages/impressum.vue",
+    "chunkName": "pages/impressum",
+    "_name": "_5a54b570"
+  },
+  {
     "name": "index",
     "path": "/",
     "component": "/Users/carlonatter/_code/wnatter/wnatter-frontend/pages/index.vue",

@@ -2,6 +2,9 @@
 @use "assets/css/main/breakpoints" as *;
 @use "assets/css/main/main" as *;
 
+.impressum__link:hover {
+    color: blue;
+}
 .contact {
     display: flex;
     flex-flow: row wrap;

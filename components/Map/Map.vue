@@ -10,6 +10,9 @@
                 </a>
             </div>
             <div class="text__big" v-html="contact.contactlinks"></div>
+            <div class="text__big">
+                <a class="impressum__link" href="/impressum">Impressum -> </a>
+            </div>
         </div>
         <div class="map" v-html="contact.mapframe"></div>
     </div>

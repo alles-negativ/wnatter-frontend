@@ -6,13 +6,14 @@ You can directly use them in pages and other components without the need to impo
 
 **Tip:** If a component is conditionally rendered with `v-if` and is big, it is better to use `Lazy` or `lazy-` prefix to lazy load.
 
-- `<Articles>` | `<articles>` (components/Articles/Articles.vue)
-- `<CookieBox>` | `<cookie-box>` (components/CookieBox/CookieBox.vue)
-- `<Footer>` | `<footer>` (components/Footer/Footer.vue)
-- `<Header>` | `<header>` (components/Header/Header.vue)
 - `<Anfrage>` | `<anfrage>` (components/Anfrage/Anfrage.vue)
-- `<Map>` | `<map>` (components/Map/Map.vue)
+- `<CookieBox>` | `<cookie-box>` (components/CookieBox/CookieBox.vue)
+- `<Articles>` | `<articles>` (components/Articles/Articles.vue)
+- `<Header>` | `<header>` (components/Header/Header.vue)
+- `<Footer>` | `<footer>` (components/Footer/Footer.vue)
+- `<Impressum>` | `<impressum>` (components/Impressum/Impressum.vue)
 - `<Firma>` | `<firma>` (components/Firma/Firma.vue)
+- `<Map>` | `<map>` (components/Map/Map.vue)
 - `<Navigation>` | `<navigation>` (components/Navigation/Navigation.vue)
 - `<Person>` | `<person>` (components/Person/Person.vue)
 - `<Spacer>` | `<spacer>` (components/Spacer/Spacer.vue)
